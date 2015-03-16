@@ -1,0 +1,24 @@
+digraph {
+    node [shape=record];
+    0 [label="{Char|'c'}"];
+    1 [label="{Char|'d'}"];
+    2 [label="{Char|'e'}"];
+    3 [label="{[]|[]}"];
+    4 [label="{PairingHeap|Node|{<0>|<1>}}"];
+    4 -> 2 [tailport=0];
+    4 -> 3 [tailport=1];
+    5 [label="{[]|[]}"];
+    6 [label="{[]|(:)|{<0>|<1>}}"];
+    6 -> 4 [tailport=0];
+    6 -> 5 [tailport=1];
+    7 [label="{PairingHeap|Node|{<0>|<1>}}"];
+    7 -> 1 [tailport=0];
+    7 -> 6 [tailport=1];
+    8 [label="{[]|[]}"];
+    9 [label="{[]|(:)|{<0>|<1>}}"];
+    9 -> 7 [tailport=0];
+    9 -> 8 [tailport=1];
+    10 [label="{PairingHeap|Node|{<0>|<1>}}"];
+    10 -> 0 [tailport=0];
+    10 -> 9 [tailport=1];
+}
